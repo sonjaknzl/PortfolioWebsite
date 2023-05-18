@@ -140,7 +140,7 @@ ul {
   min-height: 100vh;
   height: fit-content;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .videoSlide {
   height: 180vh;
@@ -891,9 +891,6 @@ ul {
   }
   .videoSlide {
     height: 220vh;
-  }
-  .lastSlideBooklet {
-    min-height: 75vh;
   }
 }
 
