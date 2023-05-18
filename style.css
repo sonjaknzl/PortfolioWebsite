@@ -140,10 +140,10 @@ ul {
   min-height: 100vh;
   height: fit-content;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 .videoSlide {
-  height: 230vh;
+  height: 180vh;
 }
 .vidSlidePlantify {
   height: 180vh;
@@ -711,7 +711,7 @@ ul {
     margin-right: 5vw;
   }
   .plantifyStruc {
-    width: 35vw;
+    width: 25vw;
     margin-left: 3rem;
   }
   .flex {
@@ -768,7 +768,7 @@ ul {
   h3,
   h4 {
     font-size: 1rem;
-    line-height: 1.8rem;
+    line-height: 1.6rem;
   }
   h1 {
     font-size: 3.2rem;
@@ -902,5 +902,6 @@ ul {
   }
   .lastSlideBooklet {
     min-height: 100vh;
+    height: auto;
   }
 }
