@@ -428,7 +428,7 @@ ul {
   margin-top: 2rem;
 }
 .marginImg {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .fullWidthImg {
   width: 80vw;
@@ -660,7 +660,7 @@ ul {
   .vertFlex {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
   }
   .unsetTop {
     top: 0;
@@ -806,8 +806,9 @@ ul {
     margin-left: 7rem;
   }
   .videoContainer {
-    width: 60vw;
+    width: 41em;
     height: auto;
+    margin-left: 1.5em;
   }
   .headingRight {
     margin-bottom: unset;
@@ -843,7 +844,7 @@ ul {
     width: 30vw;
   }
   .vertFlex {
-    flex-direction: row-reverse;
+    flex-direction: row;
     width: 80vw;
   }
   #about > .paragraph {
@@ -854,15 +855,15 @@ ul {
     width: 30vw;
   }
   .finalBookletImgContainer {
-    height: 15vw;
-    width: 18vw;
+    height: 10em;
+    width: 10em;
   }
   .fitInnerImgHeight {
     height: 100%;
     width: auto;
   }
   .vertFlex {
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: center;
   }
   .footer {
