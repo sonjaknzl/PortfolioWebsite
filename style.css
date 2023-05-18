@@ -208,15 +208,17 @@ ul {
 .navBar {
   position: fixed;
   width: 100vw;
-  bottom: 0;
+  top: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
-  opacity: 1;
+  padding: 1rem 3rem;
   z-index: 10;
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
+}
+.navBar a:first-child {
+  margin-right: 15vw;
 }
 .paragraph {
   width: 70vw;
@@ -484,6 +486,9 @@ ul {
   .lowerBackButton {
     margin-left: 2rem;
   }
+  .navBar {
+    padding: 1rem 2rem;
+  }
 }
 
 @media only screen and (min-width: 400px) {
@@ -502,12 +507,6 @@ ul {
     top: 12em;
     height: 40vh;
     width: 50vw;
-  }
-  .navBar {
-    top: 0;
-    bottom: unset;
-    justify-content: space-between;
-    padding: 1.5rem 5rem;
   }
   .navBar a:first-child {
     margin-right: 50vw;
@@ -791,7 +790,7 @@ ul {
     padding: 1rem 7rem;
   }
   .navBar a:first-child {
-    margin-right: 50vw;
+    margin-right: 60vw;
   }
   .paragraph {
     left: 7rem;
