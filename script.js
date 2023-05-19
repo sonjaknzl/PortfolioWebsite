@@ -1,5 +1,5 @@
 document.addEventListener("scroll", function () {
-  var sections = document.querySelectorAll(".slide");
+  var sections = document.querySelectorAll(".wrapper");
   var navLinks = document.querySelectorAll(".navBar a");
 
   sections.forEach(function (section) {

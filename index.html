@@ -12,91 +12,108 @@
 <body>
     <div class="background-image"></div>
     <div class="verticalLineFixed"></div>
-    <div class="slide" id="home">
-        <div class="headerContainer">
-            <div class="inlineBanner">
-                <h1>UX Design</h1>
-                <h1>UX Design</h1>
-                <h1>UX Design</h1>
-                <h1>UX Design</h1>
-                <h1>UX Design</h1>
-                <h1>UX Design</h1>
+    <div class="navBar">
+        <a href="#home">
+            <h2>home
+            </h2>
+        </a>
+        <a href="#about">
+            <h2>about
+            </h2>
+        </a>
+        <a href="#work">
+            <h2>work
+            </h2>
+        </a>
+        <a href="#contact">
+            <h2>contact
+            </h2>
+        </a>
+    </div>
+    <div class="wrapper" id="home">
+        <div class="verticalFlex">
+            <div class="headerContainer">
+                <div class="inlineBanner">
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                    <h1>UX Design</h1>
+                </div>
+                <div class="inlineBanner">
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                    <h1>Programming</h1>
+                </div>
+                <div class="inlineBanner">
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                    <h1>3D Design</h1>
+                </div>
+                <div class="inlineBanner">
+                    <h1>Graphic Design</h1>
+                    <h1>Graphic Design</h1>
+                    <h1>Graphic Design</h1>
+                    <h1>Graphic Design</h1>
+                    <h1>Graphic Design</h1>
+                    <h1>Graphic Design</h1>
+                </div>
             </div>
-            <div class="inlineBanner">
-                <h1>Programming</h1>
-                <h1>Programming</h1>
-                <h1>Programming</h1>
-                <h1>Programming</h1>
-                <h1>Programming</h1>
-            </div>
-            <div class="inlineBanner">
-                <h1>3D Design</h1>
-                <h1>3D Design</h1>
-                <h1>3D Design</h1>
-                <h1>3D Design</h1>
-                <h1>3D Design</h1>
-            </div>
-            <div class="inlineBanner">
-                <h1>Graphic Design</h1>
-                <h1>Graphic Design</h1>
-                <h1>Graphic Design</h1>
-                <h1>Graphic Design</h1>
-            </div>
-        </div>
-        <h2 class="welcomeText">Welcome<br>to<br>my<br>page</h2>
-        <div class="navBar">
-            <a href="#home">
-                <h2>home
-                </h2>
-            </a>
-            <a href="#about">
-                <h2>about
-                </h2>
-            </a>
-            <a href="#work">
-                <h2>work
-                </h2>
-            </a>
-            <a href="#contact">
-                <h2>contact
-                </h2>
-            </a>
+            <h2 class="welcomeText">Welcome<br>to<br>my<br>page</h2>
         </div>
     </div>
 
-    <div id="about" class="slide">
-        <div class="paragraph">
-            <h3 class="headingRight">about me</h3>
-            <p>I‘m a UX Design student with a passion for creating beautiful and
-                functional
-                digital experiences. I believe that combining my skills in design and programming allows me to approach
-                projects from a
-                unique perspective. This allows me to come up with solutions that are both visually appealing and
-                technologically modern.
-            </p>
-            <p class="unsetMarginTop">
-                You can download my CV
-                <a class="inlineLink" href="assets/SonjaKuenzlCV.pdf">here.</a>
-            </p>
-        </div>
-        <div class="personalImgContainer">
-            <img class="personalImg" src="assets/me.png" alt="personal image">
+    <div id="about" class="wrapper">
+        <div class="paragraph floatRightParagraph addMarginTop8">
+            <div class="flex">
+                <div>
+                    <h3 class="headingRight">about me</h3>
+                    <p class="fixedWidthParagraph">I‘m a UX Design student with a passion for creating beautiful and
+                        functional
+                        digital experiences. I believe that combining my skills in design and programming allows me to
+                        approach
+                        projects from a
+                        unique perspective. This allows me to come up with solutions that are both visually appealing
+                        and
+                        technologically modern.
+                    </p>
+                    <p class="unsetMarginTop">
+                        You can download my CV
+                        <a class="inlineLink" href="assets/SonjaKuenzlCV.pdf">here.</a>
+                    </p>
+                </div>
+
+                <div class="personalImgContainer">
+                    <img class="personalImg" src="assets/me.png" alt="personal image">
+                </div>
+            </div>
         </div>
     </div>
-    <div id="work" class="slide">
-        <div class="paragraphWork">
+    <div id="work" class="wrapper">
+        <div class="paragraph">
             <h3 class="headingLeft">work</h3>
             <p>Discover some of my latest projects below.
             </p>
         </div>
 
         <div class="workImgWrapper flexWorkImg">
-            <a href="work1.html" class="workImgContainer">
-                <img class="fitInnerImgWidth" src="assets/booklet.jpg" alt="project image booklet">
+            <a href="work3.html" class="workImgContainer">
+                <img class="fitInnerImgWidth" src="assets/plantify.jpg" alt="project image plantify">
             </a>
-            <a href="work1.html" class="bottomTextContainer">
-                <p class="workName">booklet</p>
-                <p class="workNameDesc">design project</p>
+            <a href="work3.html" class="bottomTextContainer">
+                <p class="workName">plantify</p>
+                <p class="workNameDesc">app development</p>
             </a>
         </div>
         <div class="workImgWrapper flexWorkImg flexReverseTablet">
@@ -109,36 +126,41 @@
             </a>
 
         </div>
+
         <div class="workImgWrapper flexWorkImg">
-            <a href="work3.html" class="workImgContainer">
-                <img class="fitInnerImgWidth" src="assets/plantify.jpg" alt="project image plantify">
+            <a href="work1.html" class="workImgContainer">
+                <img class="fitInnerImgWidth" src="assets/booklet.jpg" alt="project image booklet">
             </a>
-            <a href="work3.html" class="bottomTextContainer">
-                <p class="workName">plantify</p>
-                <p class="workNameDesc">app development</p>
+            <a href="work1.html" class="bottomTextContainer">
+                <p class="workName">booklet</p>
+                <p class="workNameDesc">design project</p>
             </a>
         </div>
+
     </div>
 
-    <div id="contact" class="slide">
-        <div class="paragraph">
-            <h3 class="headingRight">contact</h3>
-            <p>Are you minding a project? Don‘t hesitate to contact me!
-            </p>
-            <div class="linkContainerOuter">
-                <a class="extLink" href="https://www.linkedin.com/in/sonja-künzl-879aba172/">LinkedIn
-                </a>
-                <a class="extLink" href="https://github.com/sonjaknzl">Github</a>
-                <a class="extLink" href="mailto:sonjakuenzl97@gmail.com">Mail</a>
+    <div id="contact" class="wrapper">
+        <div class="verticalFlex">
+            <div class="paragraph addMarginTop2">
+                <h3 class="headingRight">contact</h3>
+                <p>Are you minding a project? Don‘t hesitate to contact me!
+                </p>
+                <div class="linkContainerOuter">
+                    <a class="extLink" href="https://www.linkedin.com/in/sonja-künzl-879aba172/">LinkedIn
+                    </a>
+                    <a class="extLink" href="https://github.com/sonjaknzl">Github</a>
+                    <a class="extLink" href="mailto:sonjakuenzl97@gmail.com">Mail</a>
 
+                </div>
+            </div>
+            <div>
+                <div class="footer">
+                    <a href="legal.html">legal</a>
+                    <a href="privacy.html">privacy</a>
+                </div>
+                <div class="horizontalLine"></div>
             </div>
         </div>
-
-        <div class="footer">
-            <a href="legal.html">legal</a>
-            <a href="privacy.html">privacy</a>
-        </div>
-        <div class="horizontalLine"></div>
     </div>
     <script src="script.js"></script>
 </body>

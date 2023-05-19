@@ -12,23 +12,23 @@
 <body>
     <div class="background-image"></div>
     <div class="verticalLineFixed"></div>
-    <div class="slide">
-        <div class="paragraph addTop6">
+    <div class="wrapper">
+        <div class="paragraph">
             <a class="backButton" href="index.html">
                 back</a>
-            <div class="workImgContainer unsetPos marginSlide">
+            <div class="workImgContainer addMarginTop8">
                 <img class="fitInnerImgWidth" src="assets/plantify.png" alt="work image">
             </div>
             <h3>PLANTIFY</h3>
-            <p>This design work was part of a university project and involved the creation of an app concept
+            <p class="fixedWidthParagraph">This design work was part of a university project and involved the creation
+                of an app concept
                 as well as the development of the CRUD app in Android Studio with Kotlin and SQLite.
             </p>
         </div>
-    </div>
-    <div class="slide">
-        <div class="paragraph unsetTop paragraphBroad">
+        <div class="paragraph addMarginTop10">
             <h4 class="headingRight headingWork unsetMarginTop">idea and motivation</h4>
-            <p>The general app idea was to implement a digital plant encyclopedia/ diary. The user can create entries in
+            <p class="fixedWidthParagraph">The general app idea was to implement a digital plant encyclopedia/ diary.
+                The user can create entries in
                 the app for each of their houseplants. The entry includes information like the plant’s name, the plant
                 species, date of purchase, date of
                 last irrigation. The entries are stored in a database using SQLite. Furthermore, the app calculates and
@@ -40,9 +40,8 @@
 
             <img class="fullWidthImg spryzeCI" src="assets/plantify-wire2.png" alt="plantify wireframe">
         </div>
-    </div>
-    <div class="slide">
-        <div class="paragraph paragraphBroad addTop6">
+
+        <div class="paragraph addMarginTop10">
             <h4 class="headingWork headingRight unsetMarginTop">data class plant</h4>
             <p>A central part of the app consists of the data class 'plant' which represents the entries the user
                 creates, updates, reads and deletes.
@@ -55,13 +54,13 @@
             </p>
             <img class="fullWidthImg dataclassPlant" src="assets/plantify-dataclass.png" alt="plantify dataclass">
         </div>
-    </div>
-    <div class="slide">
-        <div class="paragraph  addTop6 paragraphVidBroad">
+
+        <div class="paragraph addMarginTop10">
             <div class="flex">
                 <div>
                     <h4 class="headingWork">basic structure</h4>
-                    <p class="paragraphWidth">A basic diagram was created to visualise the structure of the app and the
+                    <p class="fixedWidthParagraph">A basic diagram was created to visualise the structure of the app and
+                        the
                         connections between the
                         different classes.<br>The Main Activity controlls the NavigationView with the hamburger menu on
                         the
@@ -73,20 +72,19 @@
                 <img class="plantifyStruc" src="assets/plantify-struc.png" alt="plantify wireframe">
             </div>
         </div>
-    </div>
-    <div class="slide">
-        <div class="paragraph paragraphBroad">
+
+        <div class="paragraph addMarginTop10">
             <h4 class="headingWork">database and csv file</h4>
-            <p>The data containing the optimal number of days between watering the plants and the infoText for each
+            <p class="fixedWidthParagraph">The data containing the optimal number of days between watering the plants
+                and the infoText for each
                 plant species is stored in an external CSV file. This is, as it is more dynamic (file can be adjusted
                 without having to change code) and gives the future opportunity to fetch data from the internet. The CSV
                 file is read and the info is stored in a database.<br>
             </p>
             <img class="fullWidthImg spryzeCI" src="assets/plantify-csv.svg" alt="final design timetable">
         </div>
-    </div>
-    <div class="slide">
-        <div class="paragraph paragraphBroad">
+
+        <div class="paragraph addMarginTop10">
             <p><br>The plant entries are stored in a database using SQLite. The two databases are controlled from the
                 DatabaseHelper class. The DatabaseHelper object is fetched and displayed in the HomeFragment as well as
                 in the ToDoFragment. The entries can be updated and deleted in the HomeFragment.
@@ -100,76 +98,79 @@
                 entries are transferred into another new table and given new unique ascending ids. The old table is
                 deleted.
             </p>
-        </div>
-    </div>
-    <div class="slide vidSlidePlantify">
-        <div class="paragraph paragraphVidBroad">
-            <div class="flex">
-                <div>
-                    <h4 class="headingWork">create and update plant</h4>
-                    <p class="paragraphWidth">When creatung an entry the AddFragment is called and the user is shown a
-                        form.
-                        The user inputs are
-                        checked. A new entry is
-                        created and the new entry is added to the database.
-                    </p>
+
+            <div class="paragraph addMarginTop10">
+                <div class="flex">
+                    <div>
+                        <h4 class="headingWork">create and update plant</h4>
+                        <p class="fixedWidthParagraph">When creatung an entry the AddFragment is called and the user is
+                            shown
+                            a
+                            form.
+                            The user inputs are
+                            checked. A new entry is
+                            created and the new entry is added to the database.
+                        </p>
+                    </div>
+                    <div class="spryzeVidContainer">
+                        <video autoplay loop muted class="fitInnerImgWidth" src="assets/plantify-createupdate.mp4"
+                            type="video/mp4" alt="spryze high fidelity video">
+                    </div>
                 </div>
-                <div class="spryzeVidContainer">
-                    <video autoplay loop muted class="fitInnerImgWidth" src="assets/plantify-createupdate.mp4"
-                        type="video/mp4" alt="spryze high fidelity video">
+
+                <div class="flex flexReverse">
+                    <div>
+                        <h4 class="headingWork">irrigate plant</h4>
+                        <p class="fixedWidthParagraph">
+                            The user can irrigate the plants in the ToDoFragment which can be accessed via the
+                            NavigationView. The
+                            user can press the waterdrop button which updates the lastWaterDate in the system and
+                            calculates
+                            the
+                            nextWaterDate. The RecyclerView is updated.
+                        </p>
+                    </div>
+                    <div class="spryzeVidContainer">
+                        <video autoplay loop muted class="fitInnerImgWidth" src="assets/plantify-water.mp4"
+                            type="video/mp4" alt="spryze high fidelity video">
+                    </div>
                 </div>
             </div>
 
-            <div class="flex flexReverse">
-                <div>
-                    <h4 class="headingWork">irrigate plant</h4>
-                    <p class="paragraphWidth">
-                        The user can irrigate the plants in the ToDoFragment which can be accessed via the
-                        NavigationView. The
-                        user can press the waterdrop button which updates the lastWaterDate in the system and calculates
-                        the
-                        nextWaterDate. The RecyclerView is updated.
-                    </p>
-                </div>
-                <div class="spryzeVidContainer">
-                    <video autoplay loop muted class="fitInnerImgWidth" src="assets/plantify-water.mp4" type="video/mp4"
-                        alt="spryze high fidelity video">
-                </div>
+            <div class="paragraph addMarginTop10">
+                <h4 class="headingWork">limitations & lessons learned</h4>
+                <p class="fixedWidthParagraph">
+                    As this work was part of a university project and the first time I was working with Android Studio
+                    and
+                    Kotlin, there is room for code refinement. Nevertheless, I am content with the result and the
+                    progress I
+                    made
+                    working with Kotlin and SQLite.
+                    From the perspective of UX, some user testings would need to be conducted to evaluate the intuitive
+                    use
+                    of the app.</p>
+                <p class="addMarginTop2">
+                    Further refinements could include:
+                <ul>
+                    <li>Notifications for irrigation</li>
+                    <li>Stay in
+                        ToDoFragment and push watered
+                        entry down after watering a plant</li>
+                    <li>
+                        Watering in ToDoFragment should update waterDate based on position</li>
+                </ul>
+                </p>
+                <p class="addMarginTop2">
+                    An extended report can be downloaded
+                    <a class="inlineLink" href="assets/plantify.pdf">here.</a>
+                </p>
             </div>
-        </div>
-    </div>
 
-    <div class="slide lastSlidePlantify">
-        <div class="paragraph addTop paragraphBroad">
-            <h4 class="headingWork unsetMarginTop">limitations & lessons learned</h4>
-            <p>
-                As this work was part of a university project and the first time I was working with Android Studio and
-                Kotlin, there is room for code refinement. Nevertheless, I am content with the result and the progress I
-                made
-                working with Kotlin and SQLite.
-                From the perspective of UX, some user testings would need to be conducted to evaluate the intuitive use
-                of the app.</p>
-            <p class="unsetMarginTop">
-                Further refinements could include:
-            <ul>
-                <li>Notifications for irrigation</li>
-                <li>Stay in
-                    ToDoFragment and push watered
-                    entry down after watering a plant</li>
-                <li>
-                    Watering in ToDoFragment should update waterDate based on position</li>
-            </ul>
-            </p>
-            <p class="unsetMarginTop">
-                An extended report can be downloaded
-                <a class="inlineLink" href="assets/plantify.pdf">here.</a>
-            </p>
+            <a class="lowerBackButton addMarginTop8" href="index.html">
+                back</a>
         </div>
-    </div>
-    <div class="backBtnWrapper">
-        <a class="lowerBackButton" href="index.html">
-            back</a>
-    </div>
+
+
 </body>
 
 </html>
