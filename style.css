@@ -178,7 +178,7 @@ ul {
 .headerContainer {
   position: relative;
   margin-top: 10vh;
-  margin-left: -5em;
+  margin-left: -3em;
   transform: translateX(-0%);
   z-index: 0;
 }
@@ -186,7 +186,7 @@ ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  height: 78vh;
+  height: 75vh;
 }
 .navBar {
   position: fixed;
@@ -477,7 +477,7 @@ ul {
     padding-left: 3vw;
   }
   .headerContainer {
-    margin-left: -9em;
+    margin-left: -5em;
   }
   .workImgWrapper {
     display: flex;
@@ -702,7 +702,7 @@ ul {
     width: 30vw;
   }
   .headerContainer {
-    margin-left: -13em;
+    margin-left: -7em;
   }
   .workImgContainer {
     height: 20vh;
