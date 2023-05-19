@@ -382,6 +382,9 @@ ul {
 .customerJourneyImg {
   width: 80vw;
 }
+.fixedWidthParagraph {
+  width: 70vw;
+}
 
 /* Animation */
 @keyframes marquee {
@@ -422,8 +425,6 @@ ul {
   .horizontalLine {
     margin-left: -2rem;
   }
-}
-@media screen and (max-width: 350px) {
   .navBar a:first-child {
     margin-right: 10vw;
   }
