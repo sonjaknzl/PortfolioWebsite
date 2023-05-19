@@ -178,7 +178,7 @@ ul {
 .headerContainer {
   position: relative;
   margin-top: 10vh;
-  margin-left: -2em;
+  margin-left: -1em;
   transform: translateX(-0%);
   z-index: 0;
 }
