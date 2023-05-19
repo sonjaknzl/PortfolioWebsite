@@ -81,18 +81,20 @@
                 without having to change code) and gives the future opportunity to fetch data from the internet. The CSV
                 file is read and the info is stored in a database.<br>
             </p>
-            <img class="fullWidthImg spryzeCI" src="assets/plantify-csv.svg" alt="final design timetable">
+            <img class="fullWidthImg spryzeCI addMarginTop2" src="assets/plantify-csv.svg" alt="final design timetable">
         </div>
 
         <div class="paragraph addMarginTop10">
-            <p><br>The plant entries are stored in a database using SQLite. The two databases are controlled from the
+            <p class="fixedWidthParagraph40"><br>The plant entries are stored in a database using SQLite. The two
+                databases are controlled from the
                 DatabaseHelper class. The DatabaseHelper object is fetched and displayed in the HomeFragment as well as
                 in the ToDoFragment. The entries can be updated and deleted in the HomeFragment.
             </p>
 
-            <img class="fullWidthImg dbPlant" src="assets/plantify-db.svg" alt="final design timetable">
+            <img class="fullWidthImg dbPlant addMarginTop2" src="assets/plantify-db.svg" alt="final design timetable">
 
-            <p><br>As plant entries are displayed in a RecyclerView and a swipe-to-delete interaction should be
+            <p class="fixedWidthParagraph40"> <br>As plant entries are displayed in a RecyclerView and a swipe-to-delete
+                interaction should be
                 implemented in the HomeFragment, the entries needed to be able to be deleted by position in the
                 RecyclerView. As there is one id missing now, the entries are not ascending seamlessly. Therefore, the
                 entries are transferred into another new table and given new unique ascending ids. The old table is
@@ -103,7 +105,8 @@
                 <div class="flex">
                     <div>
                         <h4 class="headingWork">create and update plant</h4>
-                        <p class="fixedWidthParagraph">When creatung an entry the AddFragment is called and the user is
+                        <p class="fixedWidthParagraph">When creatung an entry the AddFragment is called and the user
+                            is
                             shown
                             a
                             form.
