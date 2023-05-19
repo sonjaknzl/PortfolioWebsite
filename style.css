@@ -362,10 +362,7 @@ ul {
 .structureContainer {
   width: 65vw;
 }
-.dataclassPlant {
-  margin-top: 1.5rem;
-  height: 30vh;
-}
+
 .addMarginTop10 {
   margin-top: 10rem;
 }
@@ -378,6 +375,13 @@ ul {
 .floatRightParagraph {
   width: unset;
 }
+.fullWidthImg {
+  width: 100%;
+  height: auto;
+}
+.customerJourneyImg {
+  width: 80vw;
+}
 
 /* Animation */
 @keyframes marquee {
@@ -389,7 +393,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 380px) {
   h2 {
     font-size: 0.8rem;
     line-height: 1rem;
@@ -412,8 +416,16 @@ ul {
   .navBar {
     padding-left: 2rem;
   }
+  .navBar a:first-child {
+    margin-right: 20vw;
+  }
   .horizontalLine {
     margin-left: -2rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .navBar a:first-child {
+    margin-right: 10vw;
   }
 }
 
@@ -616,23 +628,26 @@ ul {
   .iconImgContainer {
     margin-right: 2vw;
   }
-  .fullWidthImg {
+  .lowFidImgSpryze {
+    height: 60vh;
+    width: auto;
+  }
+  .dataclassPlant {
+    margin-top: 1.5rem;
+    height: 30vh;
     width: auto;
   }
   .spryzeCI {
-    height: 45vh;
-    padding-top: 2rem;
-  }
-  .lowFidImgSpryze {
-    max-height: 70vh;
-    padding-top: 2rem;
+    height: 35vh;
+    width: auto;
   }
   .ueqImg {
-    max-height: 30vh;
-    padding-top: 2rem;
+    height: 30vh;
+    width: auto;
   }
   .vidSlidePlantify {
     height: 150vh;
+    width: auto;
   }
   .lastSlidePlantify {
     min-height: 80vh;
@@ -653,9 +668,8 @@ ul {
     width: 40em;
   }
   .dbPlant {
-    margin-top: 1.5rem;
     height: 25vh;
-    margin-left: 0;
+    width: auto;
   }
 }
 
