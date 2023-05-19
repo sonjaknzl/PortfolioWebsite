@@ -119,6 +119,7 @@ ul {
   display: inline-block;
   text-decoration: underline;
   padding-left: 0.5rem;
+  position: relative;
 }
 .headingRight {
   text-align: right;
@@ -281,12 +282,16 @@ ul {
   transform-origin: center center;
   transition: all 0.5s linear;
 }
+.footer {
+  position: relative;
+}
 .footer a {
   display: inline-block;
   padding-right: 1rem;
   text-decoration: underline;
 }
 .backButton {
+  position: relative;
   text-decoration: underline;
 }
 .lowerBackButton {
