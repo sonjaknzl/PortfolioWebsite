@@ -178,7 +178,7 @@ ul {
 .headerContainer {
   position: relative;
   margin-top: 10vh;
-  margin-left: -1em;
+  margin-left: -5em;
   transform: translateX(-0%);
   z-index: 0;
 }
@@ -476,6 +476,9 @@ ul {
     padding: unset;
     padding-left: 3vw;
   }
+  .headerContainer {
+    margin-left: -9em;
+  }
   .workImgWrapper {
     display: flex;
     margin-top: 8vh;
@@ -690,7 +693,7 @@ ul {
     padding-right: 7rem;
   }
   .navBar a:first-child {
-    margin-right: 60vw;
+    margin-right: 58vw;
   }
   .personalImgContainer {
     margin-right: -7rem;
@@ -699,7 +702,7 @@ ul {
     width: 30vw;
   }
   .headerContainer {
-    margin-left: -7em;
+    margin-left: -13em;
   }
   .workImgContainer {
     height: 20vh;
