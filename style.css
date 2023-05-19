@@ -372,6 +372,9 @@ ul {
 .addMarginTop2 {
   margin-top: 2rem;
 }
+.addMarginTop15 {
+  margin-top: 1.5rem;
+}
 .floatRightParagraph {
   width: unset;
 }
