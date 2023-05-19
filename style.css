@@ -165,7 +165,7 @@ ul {
   height: 0.1rem;
   width: 100vw;
   background-color: rgb(130, 130, 130);
-  margin-left: -3rem;
+  margin-left: -2rem;
   margin-top: 1rem;
   z-index: 1;
 }
@@ -178,7 +178,7 @@ ul {
 .headerContainer {
   position: relative;
   margin-top: 10vh;
-  margin-left: -3em;
+  margin-left: -2em;
   transform: translateX(-0%);
   z-index: 0;
 }
@@ -196,7 +196,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0rem;
-  padding-left: 3rem;
+  padding-left: 2rem;
   padding-right: 2rem;
   z-index: 10;
   backdrop-filter: blur(6px);
@@ -214,7 +214,7 @@ ul {
   display: flex;
   align-items: center;
   float: right;
-  margin-right: -3rem;
+  margin-right: -2rem;
   margin-top: 2rem;
 }
 .personalImg {
@@ -334,7 +334,7 @@ ul {
   width: 72vw;
   margin-top: 2rem;
   position: relative;
-  margin-left: -3rem;
+  margin-left: -2rem;
 }
 .timetableContainer {
   position: relative;
