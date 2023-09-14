@@ -222,7 +222,7 @@ ul {
   height: auto;
   position: relative;
   z-index: 2;
-  margin-bottom: 25vh;
+  margin-bottom: 10vh;
 }
 .workImgContainer {
   overflow: hidden;
@@ -657,7 +657,7 @@ ul {
     min-height: 80vh;
   }
   .personalImg {
-    margin-bottom: 15rem;
+    margin-bottom: 8rem;
   }
   .addMarginTop10 {
     margin-top: 18rem;
