@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@font-face {
+    font-family: 'MS-Light';
+    src: url('/fonts/Montserrat-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MS-Regular';
+    src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'MS-Medium';
+    src: url('/fonts/Montserrat-Medium.ttf') format('truetype');
+}
