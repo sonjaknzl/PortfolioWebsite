@@ -1,4 +1,5 @@
 import React from "react";
+import { Reveal } from "./Reveal";
 
 const icons = [
   {
@@ -61,28 +62,42 @@ const renderIcons = () => {
 
 const About = () => {
   return (
-    <div id="about" className="relative h-[130vh] font-MSRegular uppercase">
-      <div className="absolute left-10 text-[0.6rem] w-[65vw] md:w-[33vw] top-[25vh] md:top-[30vh] md:left-[60vw] z-10 text-justify text-gray-800">
-        <p className="relative">
-          I‘m a UX Design student & frontend developer with a passion for
-          creating beautiful and functional digital experiences. <br />
-          <br />I believe that combining my skills in design and programming
-          allows me to approach projects from a unique perspective. This allows
-          me to come up with solutions that are both visually appealing and
-          technologically modern.
-        </p>
-        <div className="relative flex justify-between items-center pt-4">
-          {renderIcons()}
-        </div>
+    <div
+      id="about"
+      className="relative min-h-[140vh] h-fit font-MSRegular uppercase overflow-hidden w-full"
+    >
+      <div className="relative pt-[5rem] md:pt-0 md:absolute left-10 md:left-[60vw] md:top-[15vh] lg:top-[65vh] lg:left-[50vw] z-10">
+        <Reveal>
+          <h1 className="text-[3rem] lg:text-[8rem] text-gray-800">About</h1>
+        </Reveal>
       </div>
-      <h1 className="absolute text-[3rem] left-10 md:left-[60vw] md:top-[15vh] top-[13vh] lg:text-[8rem] lg:top-[65vh] lg:left-[50vw] z-10 text-gray-800">
-        About
-      </h1>
-      <img
-        className="absolute w-full top-[60vh] md:top-[40vh] md:left-[5vw] md:w-[50vw]"
-        src="/assets/images/sonjakuenzl.jpeg"
-        alt="photo of sonja"
-      />
+      <div className="relative pt-[0.5rem] left-10 text-[0.6rem] w-[65vw] md:w-[33vw] md:top-[30vh] md:left-[60vw] z-10 text-justify text-gray-800">
+        <Reveal>
+          <p className="relative">
+            I‘m a UX Design student & frontend developer with a passion for
+            creating beautiful and functional digital experiences. <br />
+            <br />
+          </p>
+        </Reveal>
+        <Reveal>
+          <p className="relative">
+            I believe that combining my skills in design and programming allows
+            me to approach projects from a unique perspective. This allows me to
+            come up with solutions that are both visually appealing and
+            technologically modern.
+          </p>
+        </Reveal>
+        <Reveal>
+          <div className="relative  w-[65vw] md:w-[33vw] flex justify-between items-center pt-4">
+            {renderIcons()}
+          </div>
+        </Reveal>
+      </div>
+      <div className="absolute w-full pt-20 sm:pt-0 sm:w-[65vw] sm:top-[60vh] md:top-[40vh] md:left-[5vw] md:w-[50vw]">
+        <Reveal>
+          <img src="/assets/images/sonjakuenzl.jpeg" alt="photo of sonja" />
+        </Reveal>
+      </div>
     </div>
   );
 };
