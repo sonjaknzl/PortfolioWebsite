@@ -12,9 +12,9 @@ const Home = () => {
     <div
       id="home"
       style={gradientStyle}
-      className="font-MSLight uppercase text-[0.6rem] text-gray-200 overflow-hidden w-full"
+      className="font-MSLight uppercase text-[0.6rem] text-gray-200 overflow-hidden w-[100vw]"
     >
-      <div className="absolute bottom-[10vh] right-[6vw] w-[23em] overflow-clip">
+      <div className="absolute bottom-[10vh] right-[6vw] w-[23em]">
         <Reveal>
           <div className="flex justify-end">Welcome to my page.</div>
           <div className="relative text-justify">

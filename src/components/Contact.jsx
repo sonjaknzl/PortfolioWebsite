@@ -22,8 +22,8 @@ const Contact = () => {
   }, []);
 
   const lineAnimation = {
-    hidden: { scaleX: 0, transformOrigin: "left" },
-    visible: { scaleX: 10, transformOrigin: "left" },
+    hidden: { x: "0%" },
+    visible: { x: "100%" },
   };
 
   const gradientStyle = {
@@ -37,69 +37,72 @@ const Contact = () => {
     <div
       id="contact"
       style={gradientStyle}
-      className="relative font-MSLight uppercase text-[0.6rem] text-gray-200 "
+      className="relative font-MSLight uppercase text-[0.6rem] text-gray-200 pr-[5rem]"
     >
-      <div className="pt-[20vh] sm:pt-[5vh] ml-[2.5rem] sm:ml-[10rem] text-[4rem] ">
-        <Reveal>
-          <h1 className="text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[6rem]  text-gray-200">
-            Let's talk!
-          </h1>
-        </Reveal>
-        <div className="pl-[2rem] mt-[1rem] text-[1.5rem] sm:text-[2rem] xl:text-[2rem]">
+      <div className="pt-[20vh] sm:pt-[5vh] sm:ml-[10rem]">
+        <div className="w-fit ml-auto">
           <Reveal>
-            <motion.a
-              className="block pb-4"
-              href="https://www.linkedin.com/in/sonja-künzl-879aba172/"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial="hidden"
-              whileHover="visible"
-              animate="hidden"
-            >
-              <span>LinkedIn</span>
-              <motion.div
-                className="border-b-[0.01rem] -mt-[0.2rem]"
-                variants={lineAnimation}
-                transition={{ duration: 0.5 }}
-              />
-            </motion.a>
+            <h1 className="text-right text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] xl:leading-[12rem] text-gray-200">
+              Get in touch!
+            </h1>
           </Reveal>
-          <Reveal>
-            <motion.a
-              className="block pb-4"
-              href="https://github.com/sonjaknzl"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial="hidden"
-              whileHover="visible"
-              animate="hidden"
-            >
-              <span>GitHub</span>
-              <motion.div
-                className="border-b-[0.01rem] -mt-[0.2rem]"
-                variants={lineAnimation}
-                transition={{ duration: 0.5 }}
-              />
-            </motion.a>
-          </Reveal>
-          <Reveal>
-            <motion.a
-              className="block pb-4"
-              href="mailto:sonjakuenzl@aol.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              initial="hidden"
-              whileHover="visible"
-              animate="hidden"
-            >
-              <span>Mail</span>
-              <motion.div
-                className="border-b-[0.01rem] -mt-[0.2rem]"
-                variants={lineAnimation}
-                transition={{ duration: 0.5 }}
-              />
-            </motion.a>
-          </Reveal>
+
+          <div className=" mt-[1rem] text-[1.5rem] sm:text-[2rem] xl:text-[1.5rem] text-right">
+            <Reveal width="w-full">
+              <motion.a
+                className="block pb-4"
+                href="https://www.linkedin.com/in/sonja-künzl-879aba172/"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial="hidden"
+                whileHover="visible"
+                animate="hidden"
+              >
+                <span>LinkedIn</span>
+                <motion.div
+                  className="border-b-[0.01rem] -mt-[0.2rem]"
+                  variants={lineAnimation}
+                  transition={{ duration: 0.5 }}
+                />
+              </motion.a>
+            </Reveal>
+            <Reveal width="w-full">
+              <motion.a
+                className="block pb-4"
+                href="https://github.com/sonjaknzl"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial="hidden"
+                whileHover="visible"
+                animate="hidden"
+              >
+                <span>GitHub</span>
+                <motion.div
+                  className="border-b-[0.01rem] -mt-[0.2rem]"
+                  variants={lineAnimation}
+                  transition={{ duration: 0.5 }}
+                />
+              </motion.a>
+            </Reveal>
+            <Reveal width="w-full">
+              <motion.a
+                className="block pb-4"
+                href="mailto:sonjakuenzl@aol.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                initial="hidden"
+                whileHover="visible"
+                animate="hidden"
+              >
+                <span>Mail</span>
+                <motion.div
+                  className="border-b-[0.01rem] -mt-[0.2rem]"
+                  variants={lineAnimation}
+                  transition={{ duration: 0.5 }}
+                />
+              </motion.a>
+            </Reveal>
+          </div>
         </div>
       </div>
       <div
@@ -118,7 +121,7 @@ const Contact = () => {
               }}
               className="whitespace-nowrap"
             >
-              <p className="w-fit">Contact me!</p>
+              <p className="w-fit">Contact me</p>
             </motion.div>
           ))}
         </AnimatePresence>
