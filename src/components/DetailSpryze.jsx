@@ -333,14 +333,11 @@ const DetailSpryze = ({ project, onClose }) => {
             </div>
           </div>
           <Reveal width="w-full">
-            <div className="h-fit sm:h-[60vh] xl:h-[80vh] -m-[1rem]">
+            <div className="h-fit sm:h-[70vh] xl:h-[80vh] -m-[1rem]">
               <Slider {...settings} className="w-full pb-[3rem]">
                 {slides.map((slide, index) => (
-                  <div>
-                    <div
-                      key={index}
-                      className="w-full justify-center flex flex-col sm:flex-row items-center"
-                    >
+                  <div key={index}>
+                    <div className="w-full justify-center flex flex-col sm:flex-row items-center">
                       <img
                         src={slide.image}
                         alt={slide.title}

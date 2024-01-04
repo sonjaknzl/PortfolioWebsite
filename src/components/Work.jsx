@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Reveal } from "./Reveal";
 import DetailSpryze from "./DetailSpryze";
+import DetailPlantify from "./DetailPlantify";
 
 const projects = [
   {
@@ -11,7 +12,7 @@ const projects = [
     position: " sm:ml-[5rem] lg:mt-[5rem] sm:w-[40vw]",
   },
   {
-    imageSrc: "/assets/images/plantify1.png",
+    imageSrc: "/assets/images/plantify.png",
     altText: "project image plantify",
     category: "app development",
     title: "plantify",
@@ -82,10 +83,13 @@ const Work = () => {
               onClose={closeProjectDetail}
             />
           )}
-          {/* {selectedProject.title === "plantify" && (
-            // <DetailPlantify onClose={closeProjectDetail} />
+          {selectedProject.title === "plantify" && (
+            <DetailPlantify
+              project={selectedProject}
+              onClose={closeProjectDetail}
+            />
           )}
-          {selectedProject.title === "shuttle bus" && (
+          {/* {selectedProject.title === "shuttle bus" && (
             <DetailShuttleBus onClose={closeProjectDetail} />
           )} */}
         </>
