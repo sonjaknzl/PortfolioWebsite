@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
@@ -8,9 +8,8 @@ const Navbar = () => {
         className={`md:origin-top-right md:rotate-[-90deg] md:-translate-x-full font-MSRegular uppercase flex md:justify-end text-[0.6rem] md:mt-4 text-gray-500`}
       >
         <div className="w-[12rem] sm:w-[15rem] md:w-[65vh] flex justify-between">
-          <div
-            className={`hidden md:block mt-[0.4rem] w-[15vh] border-t-[0.05rem] border-gray-500`}
-          ></div>
+          <div className="hidden md:block mt-[0.4rem] w-[15vh] border-t-[0.05rem] border-gray-500"></div>
+
           <Link
             className="cursor-pointer transform transition-transform hover:scale-110 ease-in"
             to="about"
@@ -19,6 +18,7 @@ const Navbar = () => {
           >
             About
           </Link>
+
           <Link
             className="cursor-pointer transform transition-transform hover:scale-110 ease-in"
             to="work"
@@ -27,6 +27,7 @@ const Navbar = () => {
           >
             Work
           </Link>
+
           <Link
             className="cursor-pointer transform transition-transform hover:scale-110 ease-in"
             to="contact"

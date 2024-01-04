@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Reveal } from "./Reveal";
+import DetailSpryze from "./DetailSpryze";
 
 const projects = [
   {
@@ -27,6 +28,15 @@ const projects = [
 ];
 
 const Work = () => {
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const openProjectDetail = (project) => {
+    setSelectedProject(project);
+  };
+
+  const closeProjectDetail = () => {
+    setSelectedProject(null);
+  };
   return (
     <div
       id="work"
@@ -45,6 +55,7 @@ const Work = () => {
             <div
               key={index}
               className={`relative mt-[3rem] w-[10rem] ${project.position}`}
+              onClick={() => openProjectDetail(project)}
             >
               <Reveal width="w-fit">
                 <div className="overflow-hidden h-auto">
@@ -63,6 +74,22 @@ const Work = () => {
           ))}
         </div>
       </div>
+      {selectedProject && (
+        <>
+          {selectedProject.title === "spryze" && (
+            <DetailSpryze
+              project={selectedProject}
+              onClose={closeProjectDetail}
+            />
+          )}
+          {/* {selectedProject.title === "plantify" && (
+            // <DetailPlantify onClose={closeProjectDetail} />
+          )}
+          {selectedProject.title === "shuttle bus" && (
+            <DetailShuttleBus onClose={closeProjectDetail} />
+          )} */}
+        </>
+      )}
     </div>
   );
 };

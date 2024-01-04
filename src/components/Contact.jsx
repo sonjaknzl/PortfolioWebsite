@@ -11,7 +11,6 @@ const Contact = () => {
     const handleResize = () => {
       setScreenWidth(window.innerWidth);
       setReloadKey((prevKey) => prevKey + 1);
-      console.log("resized");
     };
 
     window.addEventListener("resize", handleResize);

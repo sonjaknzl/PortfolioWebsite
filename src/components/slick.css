@@ -1,0 +1,16 @@
+.slick-arrow{
+    display: none !important;
+}
+.slick-custom{
+    font-size: 24px;
+    color: grey;
+    cursor: pointer;
+    z-index: 1;
+    display: flex;
+    margin: 1rem;
+}
+.slick-slider{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}

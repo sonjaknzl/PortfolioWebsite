@@ -6,17 +6,17 @@ import About from "./components/About";
 import Navbar from "./components/Navbar";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
-import DetailProject from "./components/DetailProject";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
       <Routes>
         <Route
           path="/"
           element={
             <>
+              <Navbar />
               <Home />
               <About />
               <Work />
@@ -24,7 +24,7 @@ const App = () => {
             </>
           }
         />
-        <Route path="*" element={<h1>404</h1>} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   );
