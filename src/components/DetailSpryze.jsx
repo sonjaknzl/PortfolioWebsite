@@ -225,7 +225,7 @@ const DetailSpryze = ({ project, onClose }) => {
                 </p>
               </Reveal>
               <Reveal>
-                <p className="sm:ml-[2rem] mt-[1rem] w-full sm:w-[40vw] text-justify ">
+                <p className="ml-[1rem] sm:ml-[2rem] mt-[1rem] w-full sm:w-[40vw] text-justify ">
                   Following that, the sketches were translated into a{" "}
                   <span className="font-bold"> low-fidelity prototype </span>{" "}
                   using Figma. It consisted of 5 main sections serving their
@@ -316,7 +316,7 @@ const DetailSpryze = ({ project, onClose }) => {
                 />
               </Reveal>
               <Reveal>
-                <p className="w-full sm:w-[30rem] lg:w-[45rem] xl:w-[50rem] mt-[2rem]">
+                <p className="text-justify w-full sm:w-[30rem] lg:w-[45rem] xl:w-[50rem] mt-[2rem]">
                   Another usability test was conducted with the preliminary
                   high-fidelity prototype. A{" "}
                   <span className="font-bold">
