@@ -36,12 +36,12 @@ const Contact = () => {
     <div
       id="contact"
       style={gradientStyle}
-      className="relative font-MSLight uppercase text-[0.6rem] text-gray-200 pr-[5rem]"
+      className="relative font-MSLight uppercase text-[0.6rem] text-gray-200 pr-[2rem] sm:pr-[5rem]"
     >
       <div className="pt-[20vh] sm:pt-[5vh] sm:ml-[10rem]">
         <div className="w-fit ml-auto">
           <Reveal>
-            <h1 className="text-right text-[2.5rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] xl:leading-[12rem] text-gray-200">
+            <h1 className="text-right text-[2rem] sm:text-[4rem] md:text-[5rem] lg:text-[6rem] xl:text-[8rem] xl:leading-[12rem] text-gray-200">
               Get in touch!
             </h1>
           </Reveal>
