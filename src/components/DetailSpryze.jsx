@@ -83,7 +83,7 @@ const DetailSpryze = ({ project, onClose }) => {
 
   return (
     <div className="fixed top-0 left-0 m-0 w-screen overflow-x-hidden h-screen bg-white z-30 font-MSLight overflow-y-auto text-[0.6rem]">
-      <div className="relative overflow-y-auto overflow-x-hidden h-fit">
+      <div className="relative overflow-y-auto overflow-x-hidden h-screen">
         <DetailNavbar onClose={onClose} />
         <div className="relative p-10 sm:p-20 h-fit md:pl-[7rem] xl:pl-[9rem]">
           <div className="md:flex justify-between align-top">
@@ -131,7 +131,7 @@ const DetailSpryze = ({ project, onClose }) => {
         </div>
         <div className="relative p-10 sm:p-20 h-fit sm:h-screen mt-[3rem] md:pl-[7rem]">
           <Reveal>
-            <p className="mb-8">
+            <p className="mb-8 text-justify">
               After conducting market research on prevalent tools in the realm
               of influencer and corporate collaboration, a{" "}
               <span className="font-bold">customer journey</span> was
@@ -225,7 +225,7 @@ const DetailSpryze = ({ project, onClose }) => {
                 </p>
               </Reveal>
               <Reveal>
-                <p className="ml-[1rem] sm:ml-[2rem] mt-[1rem] w-full sm:w-[40vw] text-justify ">
+                <p className="sm:ml-[2rem] mt-[1rem] w-full sm:w-[40vw] text-justify ">
                   Following that, the sketches were translated into a{" "}
                   <span className="font-bold"> low-fidelity prototype </span>{" "}
                   using Figma. It consisted of 5 main sections serving their
@@ -233,7 +233,7 @@ const DetailSpryze = ({ project, onClose }) => {
                 </p>
               </Reveal>
               <Reveal>
-                <ul className="list-disc ml-[3rem] mt-[1rem]">
+                <ul className="list-disc ml-[1rem] sm:ml-[3rem] mt-[1rem]">
                   <li>
                     <span className="font-bold">home </span> - dashboard
                   </li>
@@ -366,7 +366,7 @@ const DetailSpryze = ({ project, onClose }) => {
             </h1>
           </Reveal>
           <Reveal>
-            <div className="ml-[2rem] sm:ml-[5rem] lg:ml-[10rem] w-full sm:w-[30rem] md:w-[35rem] lg:w-[40rem] mt-[3rem]">
+            <div className="pl-[2rem] sm:pl-[5rem] lg:ml-[10rem] w-full sm:w-[30rem] md:w-[35rem] lg:w-[40rem] mt-[3rem]">
               <p className="font-bold">Challenges & Opportunities</p>
               <p className="mt-[0.5rem] text-justify">
                 Our project encountered some challenges in the realm of time
@@ -381,7 +381,7 @@ const DetailSpryze = ({ project, onClose }) => {
             </div>
           </Reveal>
           <Reveal>
-            <div className="ml-[2rem] sm:ml-[5rem] lg:ml-[10rem] w-full sm:w-[30rem] md:w-[35rem] lg:w-[40rem]">
+            <div className="pl-[2rem] sm:pl-[5rem] lg:ml-[10rem] w-full sm:w-[30rem] md:w-[35rem] lg:w-[40rem]">
               <p className="mt-[2rem] font-bold">Compromises</p>
               <p className="mt-[0.5rem] text-justify">
                 While we have invested considerable time in this project,
