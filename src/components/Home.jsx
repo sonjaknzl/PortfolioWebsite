@@ -22,8 +22,8 @@ const Home = () => {
           </div>
         </Reveal>
       </div>
-      <div className="absolute top-[25vh] sm:top-unset sm:pr-[4rem] sm:left-[10vw] right-[6vw] lg:pr-[4rem] lg:bottom-[10vh] lg:left-[10vw]">
-        <div className=" p-4 w-[17rem] sm:w-[28rem] lg:w-[40rem] leading-[2.5rem] text-[2rem] sm:text-[3.5rem] sm:leading-[4rem] lg:text-[4.8rem] lg:leading-[5.5rem]">
+      <div className="absolute pr-[1rem] top-[25vh] sm:top-unset sm:pr-[4rem] sm:left-[10vw] right-[6vw] lg:pr-[4rem] lg:bottom-[10vh] lg:left-[10vw]">
+        <div className="p-4 w-[17rem] sm:w-[28rem] lg:w-[40rem] leading-[2.5rem] text-[2rem] sm:text-[3.5rem] sm:leading-[4rem] lg:text-[4.8rem] lg:leading-[5.5rem]">
           <Reveal>
             <p className="flex text-justify">Sonja Künzl</p>
           </Reveal>
