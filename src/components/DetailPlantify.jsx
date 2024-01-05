@@ -162,7 +162,7 @@ const DetailPlantify = ({ project, onClose }) => {
                 </h1>
               </Reveal>
               <Reveal>
-                <p className="w-full sm:w-[20rem] md:w-[20rem] lg:w-[30rem] ml-[0.5rem] text-justify">
+                <p className="w-full sm:w-[20rem] md:w-[20rem] lg:w-[30rem] pl-[0.5rem] text-justify">
                   A basic data class of the plant entity to be displayed in the
                   app was created. When creating a plant the user needs to
                   register a name, species, the date when the plant was
@@ -245,7 +245,7 @@ const DetailPlantify = ({ project, onClose }) => {
                 </p>
               </Reveal>
               <Reveal>
-                <ul className="ml-[2rem] list-disc mt-[1rem]">
+                <ul className="ml-[1rem] sm:ml-[2rem] list-disc mt-[1rem]">
                   <li>Hamburger/ Drawer Navigation</li>
                   <li>Visual Hierarchy</li>
                   <li>Icons</li>
