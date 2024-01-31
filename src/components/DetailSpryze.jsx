@@ -31,16 +31,16 @@ const slides = [
       "A risk factor in the planning and execution of influencer collaborations is the potential loss of overview of campaigns in the planning or execution phases. This issue is addressed through an overview page in the app, where the campaign status for each influencer is depicted for the company.",
   },
   {
-    image: "/assets/images/spryze-hf5.png",
+    image: "/assets/images/spryze-hf4.png",
     title: "Profile / Settings",
     content:
-      "In order to facilitate the (langwierigen) process of researching suitable influencers for collaboration a section for matching was konzipiert. Dem zugrunde liegt ein Matching Algorithmus der Companies und Influencer basierend auf ihren Interessen sowie Kennzahlen matched.",
+      "For the application to identify suitable influencers for collaboration, it is crucial that the application possesses sufficient key attributes about the company and its values. These essential attributes can be managed in the company profile section. Moreover, there exists a typical settings section in the application where account settings can be configured.",
   },
   {
     image: "/assets/images/spryze-hf5.png",
     title: "Chat / Communication",
     content:
-      "In order to facilitate the (langwierigen) process of researching suitable influencers for collaboration a section for matching was konzipiert. Dem zugrunde liegt ein Matching Algorithmus der Companies und Influencer basierend auf ihren Interessen sowie Kennzahlen matched.",
+      "To avoid misunderstandings and address any questions, it makes sense to provide an additional communication channel. We have incorporated this as an in-app chat, available independently of the campaign status.",
   },
 ];
 

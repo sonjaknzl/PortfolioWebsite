@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Reveal } from "./Reveal";
 import DetailSpryze from "./DetailSpryze";
 import DetailPlantify from "./DetailPlantify";
+import DetailBus from "./DetailBus";
 
 const projects = [
   {
@@ -21,7 +22,7 @@ const projects = [
   {
     imageSrc: "/assets/images/vrproject.png",
     altText: "project image vr",
-    category: "vr research",
+    category: "ux research/ vr",
     title: "shuttle bus",
     position:
       " sm:mt-[7rem] sm:ml-[14rem] mb-[10rem] sm:mb-[20rem] sm:w-[35vw]",
@@ -89,9 +90,9 @@ const Work = () => {
               onClose={closeProjectDetail}
             />
           )}
-          {/* {selectedProject.title === "shuttle bus" && (
-            <DetailShuttleBus onClose={closeProjectDetail} />
-          )} */}
+          {selectedProject.title === "shuttle bus" && (
+            <DetailBus project={selectedProject} onClose={closeProjectDetail} />
+          )}
         </>
       )}
     </div>

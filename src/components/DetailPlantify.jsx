@@ -17,7 +17,7 @@ const DetailPlantify = ({ project, onClose }) => {
           <div className="md:flex justify-between align-top">
             <div className="mt-[3rem] mb-[4rem] md:mb-0 relative z-30 md:mt-[13rem] lg:mt-[10rem]">
               <Reveal>
-                <h1 className="relative text-[3rem] sm:text-[4rem] xl:text-[5rem] leading-[6rem] font-bold mb-4 sm:mb-8 z-50 ">
+                <h1 className="relative text-[3rem] sm:text-[3.5rem] xl:text-[5rem] leading-[6rem] font-bold mb-4 sm:mb-8 z-50 ">
                   {project.title}
                 </h1>
               </Reveal>
@@ -92,7 +92,7 @@ const DetailPlantify = ({ project, onClose }) => {
         </div>
         <div className="relative p-10 sm:p-20 h-fit md:pl-[7rem] xl:pl-[9rem]">
           <Reveal width="w-full">
-            <h1 className=" mb-4 text-[2.5rem] eading-[3.5rem] sm:text-[4rem] sm:leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] xl:text-[8rem] xl:leading-[8rem]">
+            <h1 className=" mb-4 text-[2.5rem] leading-[3.5rem] sm:text-[4rem] sm:leading-[4.5rem] md:text-[5rem] md:leading-[5.5rem] xl:text-[8rem] xl:leading-[8rem]">
               ux drafts
             </h1>
           </Reveal>
@@ -119,7 +119,7 @@ const DetailPlantify = ({ project, onClose }) => {
               </li>
             </ul>
           </Reveal>
-          <div className="flex justify-center flex-col items-center ">
+          <div className="flex justify-center flex-col items-center">
             <Reveal width="w-full h-fit">
               <div className="w-full h-fit flex flex-wrap sm:flex-nowrap justify-around sm:h-[25rem] mt-[4rem]">
                 <img
@@ -245,7 +245,7 @@ const DetailPlantify = ({ project, onClose }) => {
                 </p>
               </Reveal>
               <Reveal>
-                <ul className="ml-[1rem] sm:ml-[2rem] list-disc mt-[1rem]">
+                <ul className="ml-[1rem] list-disc mt-[1rem]">
                   <li>Hamburger/ Drawer Navigation</li>
                   <li>Visual Hierarchy</li>
                   <li>Icons</li>
